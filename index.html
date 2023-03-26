@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto AI - algoritmo A*</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Trabalho Prático de IA - 2023</h1>
+    <div class="container">
+        <div class="esfera_wrapper"></div>
+        <div class="canvas_wrapper">
+            <canvas id="canvas" width="420px" height="420px"></canvas>
+        </div>
+        <div class="configuracao_wrapper">
+            <h1>Configuração</h1>
+            <div class="titulo">Defina a posição no mapa: <span id="opcaoInicio_Fim" class="opcao">Início</span></div>                
+            <div class="btn_wrapper">
+                <div onclick="verificarEstado()" class="btn">Inicío / Fim</div>
+                <div onclick="search()" class="btn">Procure a Esfera</div>
+                <div onclick="resetarMapa()" class="btn">Limpar Mapa</div>
+            </div>
+        </div>
+    </div>
+    <div class="data_wrapper">
+        <div class="data"></div>
+        <div class="hora"></div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
