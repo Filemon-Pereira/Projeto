@@ -58,7 +58,7 @@ function onClick(e) {
     switch(estadoInicioFim){
         case "Inicío":
             resetarRetangulo(posicaoInicial.x,posicaoInicial.y);
-;           desenhaRetanculo(x,y,"green")
+            desenhaRetanculo(x,y,"green");
             var novaPosicao_X = (parseInt(((x)/rentaguloMapa).toFixed())*rentaguloMapa)+pixel;
             var novaPosicao_Y = (parseInt(((y)/rentaguloMapa).toFixed())*rentaguloMapa)+pixel;
             posicaoInicial = { x:(x > novaPosicao_X ? novaPosicao_X-pixel : (novaPosicao_X-rentaguloMapa)-pixel),y:(y > novaPosicao_Y ? novaPosicao_Y-pixel : (novaPosicao_Y-rentaguloMapa)-pixel) };
@@ -95,14 +95,14 @@ function desenharMapa(){
 }
 
 // função para desenhar cada retanculo mapa
-function desenhaRetanculo(x,y,color){
+function desenhaRetanculo(x,y,cor){
     var novaPosicao_X = (parseInt(((x)/rentaguloMapa).toFixed())*rentaguloMapa)+pixel;
     var novaPosicao_Y = (parseInt(((y)/rentaguloMapa).toFixed())*rentaguloMapa)+pixel;
     var _x = x > novaPosicao_X ? novaPosicao_X : (novaPosicao_X-rentaguloMapa);
     var _y = y > novaPosicao_Y ? novaPosicao_Y : (novaPosicao_Y-rentaguloMapa);
     if(_x >= 0 && _x < width && _y < height && _y >= 0){
         context.beginPath();
-        context.fillStyle = color;
+        context.fillStyle = cor;
         context.fillRect(_x,_y,rentaguloMapa,rentaguloMapa);
         desenharMapa();
     } 
