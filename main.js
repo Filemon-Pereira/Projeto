@@ -1,5 +1,3 @@
-let fps = 60;
-
 let colunas = 20; //colunas do grid
 let linhas = 20; //linhas do grid
 
@@ -266,7 +264,7 @@ async function search() {
                         setTimeout(() => {
                             desenhaRetanculo((current.y+1)*rentaguloMapa,(current.x+1)*rentaguloMapa,"#c2c2c2");
                             resolve("Esfera não encontrada!");
-                        },1000/fps);
+                        },1000);
                     });
                     await promise;
                 }
