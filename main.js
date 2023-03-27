@@ -1,5 +1,6 @@
 let colunas = 20; //colunas do grid
 let linhas = 20; //linhas do grid
+let frameCanvas = 60;
 
 let grid = new Array(colunas); //array de todos os pontos do mapa
 
@@ -264,7 +265,7 @@ async function search() {
                         setTimeout(() => {
                             desenhaRetanculo((current.y+1)*rentaguloMapa,(current.x+1)*rentaguloMapa,"#c2c2c2");
                             resolve("Esfera não encontrada!");
-                        },15);
+                        },1000 / frameCanvas);
                     });
                     await promise;
                 }
