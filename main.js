@@ -264,7 +264,7 @@ async function search() {
                         setTimeout(() => {
                             desenhaRetanculo((current.y+1)*rentaguloMapa,(current.x+1)*rentaguloMapa,"#c2c2c2");
                             resolve("Esfera não encontrada!");
-                        },1000 / 60);
+                        },100);
                     });
                     await promise;
                 }
