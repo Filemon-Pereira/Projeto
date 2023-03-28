@@ -107,7 +107,7 @@ h1, div {
   font-size: 18px;
 }
 
-.opcaoactions_wrapper {
+.opcao {
   font-weight: 700;
   color: green;
   background-color: #e2e2e2;
@@ -141,13 +141,13 @@ h1, div {
 
 .data_wrapper{
   display: flex;
-    position: absolute;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 22px;
-    top: 85%;
-    left: 45%;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  top: 85%;
+  left: 45%;
 }
 
 .data_wrapper > .data{
