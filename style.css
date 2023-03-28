@@ -104,7 +104,10 @@ h1, div {
 .titulo {
   padding: 16px 0;
   font-weight: 600;
+  display: flex;
   font-size: 18px;
+  align-items: center;
+  gap: 4px;
 }
 
 .opcao {
